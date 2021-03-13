@@ -1,0 +1,92 @@
+#calculator {
+    font-family: 'Inconsolata', monospace;
+    color: #555;
+    width: 350px;
+    margin: 20px auto;
+}
+#calculator table {
+    width: 350px;
+    border-color: #f4f4f4;
+    border-collapse: collapse;
+}
+#calculator td {
+    width: 70px;
+    border-color: #f4f4f4;
+    padding: 0;
+}
+#calculator button {
+    width: 100%;
+    height: 70px;
+    font-size: 24px;
+    background-color: white;
+    border: none;
+}
+#calculator button.n {
+    background-color: #777;
+    color: white;
+}
+#calculator button.x {
+    background-color: #f90;
+    color: white;
+}
+#calculator button#eq {
+    background-color: #f90;
+    color: white;
+    height: 141px;
+}
+
+#calculator td.inner {
+    border-top: none;
+    border-bottom: none;
+    padding: 0px;
+}
+#calculator table.inner {
+    width: 100%;
+    font-size: 48px;
+    border: none;
+}
+#calculator table.inner td {
+    border: none;
+    background-color: #ececec;
+}
+#calculator td.side {
+    width: 10px;
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #ececec;
+}
+
+#calculator td#inputLabel {
+    height: 70px;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 16px;
+}
+#calculator td#headerLabel {
+    height: 30px;
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 16px;
+}
+#calculator td#footerLabel {
+    height: 30px;
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.copy {
+  text-align: center;
+  font-size: 0.8em;
+  color: #333;
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ほぼ電卓</title>
+    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+    <h1 id="h1">ほぼ電卓</h1>
+      
+    <div id="calculator">
+      <table border="1" cellspacing="0">
+        <tr>
+          <td colspan="5" class="inner">
+            <table class="inner">
+              <tr>
+                <td rowspan="3" class="side" onclick="goPrev()">◀</td>
+                <td id="headerLabel"></td>
+                <td rowspan="3" class="side" onclick="goNext()">▶</td>
+              </tr>
+              <tr>
+                <td id="inputLabel">0</td>
+              </tr>
+              <tr>
+                <td id="footerLabel"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3"><button onclick="pushBtn(this);">AC</button></td>
+          <td><button class="x" onclick="pushBtn(this);">e</button></td>
+          <td><button class="x" onclick="pushBtn(this);">π</button></td>
+        </tr>
+        <tr>
+          <td><button class="n" onclick="pushBtn(this);">7</button></td>
+          <td><button class="n" onclick="pushBtn(this);">8</button></td>
+          <td><button class="n" onclick="pushBtn(this);">9</button></td>
+          <td><button class="x" onclick="pushBtn(this);">+</button></td>
+          <td><button class="x" onclick="pushBtn(this);">√</button></td>
+        </tr>
+        <tr>
+          <td><button class="n" onclick="pushBtn(this);">4</button></td>
+          <td><button class="n" onclick="pushBtn(this);">5</button></td>
+          <td><button class="n" onclick="pushBtn(this);">6</button></td>
+          <td><button class="x" onclick="pushBtn(this);">-</button></td>
+          <td><button class="x" onclick="pushBtn(this);">^</button></td>
+        </tr>
+        <tr>
+          <td><button class="n" onclick="pushBtn(this);">1</button></td>
+          <td><button class="n" onclick="pushBtn(this);">2</button></td>
+          <td><button class="n" onclick="pushBtn(this);">3</button></td>
+          <td><button class="x" onclick="pushBtn(this);">×</button></td>
+          <td rowspan="2"><button id="eq" onclick="pushBtn(this);">=</button></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button class="n" onclick="pushBtn(this);">0</button></td>
+          <td><button class="n" onclick="pushBtn(this);">.</button></td>
+          <td><button class="x" onclick="pushBtn(this);">÷</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <p class="copy" onclick="toggle()">&copy; 2021 ほぼたく</p>
+  </body>
+
+  <script src="hobotaku.js"></script>
+</html>
+
